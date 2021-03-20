@@ -12,14 +12,15 @@ def createPolynomialRegression(x,y, degree):
     x_ = PolynomialFeatures(degree=degree, include_bias=False).fit_transform(x)    
 
     model = LinearRegression().fit(x_,y)
-    y_pred = model.predict(x_)
-    return y_pred
+    #y_pred = model.predict(x_)
+    return model
 
 def getBestPolynomialFit(x,y, max_degree):
     degreearray = []
     npY = np.array(y)
+    npX = np.array(x).reshape((-1,1))
     for i in range(1, max_degree):
-        predictions = createPolynomialRegression(x,y,i)
+        predictions = createPolynomialRegression(x,y,i).predict(PolynomialFeatures(degree=i, include_bias=False).fit_transform(npX))
         degreearray.append([i, rmse(predictions, npY)])
 
     #Lowest rmse is [degree (int), rmse score (float)]

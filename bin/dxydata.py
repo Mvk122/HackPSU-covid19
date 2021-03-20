@@ -24,7 +24,6 @@ def get_data_array(filename):
     return formattedrows
 
 
-
 #Returns a tuple of (date_onset and date_confirmed)
 def getDates(row):
     symptom_onset_present = True
