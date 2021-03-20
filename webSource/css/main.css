@@ -1,0 +1,20 @@
+* {
+  font-family: monospace;
+}
+#page-head {
+  text-align: center;
+  font-size: 120px;
+}
+#buttons {
+  text-align: center;
+}
+.gender-button {
+  display: inline-block;
+}
+#date {
+  display: block;
+  margin: auto;
+}
+#form > p {
+  text-align: center;
+}
