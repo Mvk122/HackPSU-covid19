@@ -1,9 +1,16 @@
 * {
   font-family: monospace;
+  overflow-x: hidden;
+}
+body {
+  font-size: 20px;
 }
 #page-head {
   text-align: center;
-  font-size: 120px;
+  font-size: 80px;
+}
+#age {
+  font-size: 20px;
 }
 #buttons {
   text-align: center;
@@ -17,4 +24,41 @@
 }
 #form > p {
   text-align: center;
+  margin: 60px;
+}
+#date {
+  height: 60px;
+  width: 230px;
+  font-size: 20px;
+}
+#submit {
+  height: 80px;
+  width: 160px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+#submit:active {
+  background-color: grey;
+}
+/* mobile responsive design */
+@media screen and (max-width: 840px){
+  #page-head {
+    font-size: 75px;
+  }
+  body {
+    font-size: 25px;
+  }
+  #age {
+    font-size: 25px;
+  }
+  #date {
+    font-size: 25px;
+  }
+  #submit {
+    font-size: 25px;
+  }
+  #age {
+    margin: 40px 0;
+  }
 }
