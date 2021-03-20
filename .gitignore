@@ -1,1 +1,5 @@
 assets/latestdata.csv
+.vscode
+/env
+*.pyc
+bin/__pycache__
