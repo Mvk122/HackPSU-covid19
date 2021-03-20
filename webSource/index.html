@@ -5,35 +5,36 @@
     <meta name="viewport" content"width=device-width,initial-scale=1">
     <title>Covid Risk</title>
     <link rel="stylesheet" href="css/main.css">
+
   </head>
   <body>
     <h1 id="page-head">Evaluate Your Covid Risk</h1>
     <form id="form" action="index.html" method="get">
       <p>
         <label for="age">Your age: </label>
-        <input type="number" name="age" id="age" placeholder="age in number(like 34)">
+        <input type="number" name="age" id="age" placeholder="number">
       </p>
 
-      <p>
-        <div id="buttons">
-          <div class="gender-button">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" value="male" id="male">
-          </div>
-          <div class="gender-button">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" value="female" id="female">
-          </div>
+      <div id="buttons">
+        <div class="gender-button">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="male" id="male">
         </div>
+        <div class="gender-button">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female" id="female">
+        </div>
+      </div>
+
+      <p id="dateLable">
+        <label for="date">Approximate Date When Covid-19 Sympton First Appeared</label>
+      </p>
+      <p>
+        <input type="date" name="dateOnSet" id="date" placeholder="yyyy-mm-dd">
       </p>
 
       <p>
-        <label for="date">Approximate Date When Covid-19 Sympton Appeared</label>
-        <input type="date" name="dateOnSet" id="date">
-      </p>
-
-      <p>
-        <button type="submit">Evaluate</button>
+        <button type="submit" id="submit">Evaluate</button>
       </p>
 
     </form>
