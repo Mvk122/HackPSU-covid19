@@ -14,7 +14,7 @@ Using Polynomial Regression Machine Learning algorithms, the covid 19 assesment 
 * Run `python website.py`
 * Connect to `localhost:5000` on your web browser and try the website!
 
-## [Try it out!](https://google.com)
+## [Try it out!](https://mun-online.herokuapp.com/)
 
 ## Created By
 
