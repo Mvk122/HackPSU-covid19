@@ -23,7 +23,7 @@ delaymodel = createPolynomialRegression(delays, delaydeathpercentages, 1)
 
 @app.route('/')
 def home_page():
-    return render_template('index.html')
+    return render_template('Home.html')
 
 @app.route('/evaluate/')
 def evaluate():
@@ -33,7 +33,7 @@ def evaluate():
         onSetDelay = (datetime.today() - datetime.strptime(request.args.get('dateOnSet'), "%Y-%m-%d")).total_seconds() /86400
         
         deathchance = get_death_chance(age, gender, onSetDelay, agemodel, age_rmse_and_degree, delaymodel, [1,0.13], male, female)
-        return render_template('evaluate.html', chance=str(deathchance))
+        return render_template('ShowResult.html', chance=str(int(deathchance)))
 
     except Exception as e:
         traceback.print_exc()
