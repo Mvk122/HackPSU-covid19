@@ -19,5 +19,5 @@ Using Polynomial Regression Machine Learning algorithms, the covid 19 assesment 
 ## Created By
 
 * Madhav Khandhar
-* JayJayJay
-* AounTech
+* Jay (Zhengjie) Zhou
+* AounTech( Ali Aoun)
