@@ -12,7 +12,7 @@ Using Polynomial Regression Machine Learning algorithms, the covid 19 assesment 
 
 * Run `pip install -r requirements.txt`
 * Run `python website.py`
-* Connect to `localhost:5000` on your web browser and try the website! 
+* Connect to `localhost:5000` on your web browser and try the website!
 
 ## [Try it out!](https://google.com)
 
