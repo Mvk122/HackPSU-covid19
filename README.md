@@ -20,4 +20,4 @@ Using Polynomial Regression Machine Learning algorithms, the covid 19 assesment 
 
 * Madhav Khandhar
 * Jay (Zhengjie) Zhou
-* AounTech
+* AounTech( Ali Aoun)
